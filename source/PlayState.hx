@@ -12,7 +12,6 @@ import Shaders;
 import Song.SwagSong;
 import StageData;
 import WiggleEffect.WiggleEffectType;
-import WindowAPI.WindowThing as Windowthing;
 import animateatlas.AtlasFrameMaker;
 import data.Etterna;
 import data.Ratings;
@@ -4938,7 +4937,7 @@ class PlayState extends MusicBeatState
         windowBoyfriend.stage.addEventListener("keyDown", FlxG.keys.onKeyDown);
         @:privateAccess
         windowBoyfriend.stage.addEventListener("keyUp", FlxG.keys.onKeyUp);
-		Windowthing.getWindowsTransparent();
+		//Windowthing.getWindowsTransparent();
         // Application.current.window.x = Std.int(display.width / 2) - 640;
         // Application.current.window.y = Std.int(display.height / 2);
 
@@ -4950,7 +4949,7 @@ class PlayState extends MusicBeatState
         spr.graphics.beginBitmapFill(bg, m);
         spr.graphics.drawRect(0, 0, bg.width, bg.height);
         spr.graphics.endFill();
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         FlxG.mouse.useSystemCursor = true;
 
         //Application.current.window.resize(640, 480);
@@ -4960,25 +4959,25 @@ class PlayState extends MusicBeatState
         boyfriendWin.graphics.beginBitmapFill(boyfriend.pixels, m);
         boyfriendWin.graphics.drawRect(0, 0, boyfriend.pixels.width, boyfriend.pixels.height);
         boyfriendWin.graphics.endFill();
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
 		
         bfScrollWin.scrollRect = new Rectangle();
 	    windowBoyfriend.stage.addChild(spr);
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         windowBoyfriend.stage.addChild(bfScrollWin);
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         bfScrollWin.addChild(boyfriendWin);
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         bfScrollWin.scaleX = 5;
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         bfScrollWin.scaleY = 5;
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         boyfriendGroup.visible = false;
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         // uncomment the line above if you want it to hide the dad ingame and make it visible via the windoe
         Application.current.window.focus();
 		FlxG.autoPause = false;
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
 	}
 
 	function popupWindow(customWidth:Int, customHeight:Int, ?customX:Int, ?customY:Int, ?customName:String, ?isTransparent:Bool = false) {
@@ -5022,7 +5021,7 @@ class PlayState extends MusicBeatState
         spr.graphics.beginBitmapFill(bg, m);
         spr.graphics.drawRect(0, 0, bg.width, bg.height);
         spr.graphics.endFill();
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         FlxG.mouse.useSystemCursor = true;
 
       //  Application.current.window.resize(640, 480);
@@ -5034,22 +5033,22 @@ class PlayState extends MusicBeatState
         dadWin.graphics.endFill();
         dadScrollWin.scrollRect = new Rectangle();
 	    windowDad.stage.addChild(spr);
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         windowDad.stage.addChild(dadScrollWin);
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         dadScrollWin.addChild(dadWin);
-		Windowthing.getWindowsTransparent();
-        dadScrollWin.scaleX = 0.7;
-		Windowthing.getWindowsTransparent();
+//Windowthing.getWindowsTransparent();
+     //   dadScrollWin.scaleX = 0.7;
+		//Windowthing.getWindowsTransparent();
         dadScrollWin.scaleY = 0.7;
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         dadGroup.visible = false;
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
         // uncomment the line above if you want it to hide the dad ingame and make it visible via the windoe
         Application.current.window.focus();
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
 		FlxG.autoPause = false;
-		Windowthing.getWindowsTransparent();
+	//	Windowthing.getWindowsTransparent();
     }
 
 	function openChartEditor()
